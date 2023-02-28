@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+/**
+ *    ____  _ _       _____  _
+ *   |  _ \(_) |     |  __ \| |
+ *   | |_) |_| |_ ___| |__) | | ___  __ _ ___  ___
+ *   |  _ <| | __/ __|  ___/| |/ _ \/ _` / __|/ _ \
+ *   | |_) | | |_\__ \ |    | |  __/ (_| \__ \  __/
+ *   |____/|_|\__|___/_|    |_|\___|\__,_|___/\___|
+ *
+ * Oander_CronjobOptimization
+ *
+ * @author Arnold Csisztai <arnold.csisztai@oander.hu>
+ * @license Oander Media Kft. (https://www.oander.hu)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="oander_cronjob_optimization" translate="label" type="text" sortOrder="710" showInDefault="1"
+                 showInWebsite="1" showInStore="0">
+            <tab>oander</tab>
+            <label>Cronjob Optimization</label>
+            <resource>Oander_CronjobOptimization::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+                <label>Cronjob Optimization Options</label>
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="0"
+                       showInStore="0">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="number_of_lines" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Max. number of lines</label>
+                    <validate>validate-number</validate>
+                    <comment>
+                        <![CDATA[
+                            Truncate the table after its records reached this limit.
+                        ]]>
+                    </comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

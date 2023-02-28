@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ *    ____  _ _       _____  _
+ *   |  _ \(_) |     |  __ \| |
+ *   | |_) |_| |_ ___| |__) | | ___  __ _ ___  ___
+ *   |  _ <| | __/ __|  ___/| |/ _ \/ _` / __|/ _ \
+ *   | |_) | | |_\__ \ |    | |  __/ (_| \__ \  __/
+ *   |____/|_|\__|___/_|    |_|\___|\__,_|___/\___|
+ *
+ * Oander_CronjobOptimization
+ *
+ * @author Arnold Csisztai <arnold.csisztai@oander.hu>
+ * @license Oander Media Kft. (https://www.oander.hu)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route frontName="cronjob_optimization_f1P00XIU4yZTMCzYiJMa" id="cronjob_optimization">
+            <module name="Oander_CronjobOptimization"/>
+        </route>
+    </router>
+</config>
